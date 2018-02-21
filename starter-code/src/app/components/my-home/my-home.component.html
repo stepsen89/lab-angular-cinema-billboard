@@ -4,10 +4,10 @@
 
 <h1>Movies</h1>
 
-<div class="movie-list">
-  <div class="movie" *ngFor="let movie of movieArray">
-    <h3>Room {{movie.room}}</h3>
-    <a [routerLink]="['..','movie',movie.id]"><img [src]="[movie.poster]" alt="poster"></a>
-    <h4>{{movie.title}}</h4>
+<div>
+  <div *ngFor="let movie of movieArray">
+    <p>{{movie.title}}</p>
+    <p>Room {{movie.room}}</p>
+    <a [routerLink]="['/movie',movie]"><img [src]="[movie.poster]"></a>
   </div>
 </div>

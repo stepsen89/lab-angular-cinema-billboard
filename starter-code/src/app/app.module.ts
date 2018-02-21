@@ -5,8 +5,6 @@ import { HttpModule } from '@angular/http';
 
 import { Routes, RouterModule } from '@angular/router';
 
-// import {routes} from './routes';
-
 import { AppComponent } from './app.component';
 import { MoviesService } from './services/movies.service';
 import { MyHomeComponent } from './components/my-home/my-home.component';
@@ -15,7 +13,7 @@ import { MyMovieComponent } from './components/my-movie/my-movie.component';
 const routes: Routes = [
  { path: '', redirectTo: 'home', pathMatch: 'full' },
  { path: 'home',  component: MyHomeComponent },
- { path: 'about', component: MyMovieComponent }
+ { path: 'movie', component: MyMovieComponent }
 ];
 
 @NgModule({
